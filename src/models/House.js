@@ -1,4 +1,4 @@
-import { Schema, model} from 'mongoose'
+import { Schema, model } from 'mongoose'
 
 const HouseSchema = new Schema({
     thumbnail: String,
@@ -11,7 +11,7 @@ const HouseSchema = new Schema({
         ref: 'User'
     }
 }, {
-    toJSON: {
+    ToJSON: {
         virtuals: true
     }
 })
